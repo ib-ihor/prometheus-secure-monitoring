@@ -37,7 +37,7 @@ sudo nginx -t && sudo systemctl restart nginx
 ### 3. Secure with SSL (Certbot)
 Obtain a free Let's Encrypt SSL certificate to enable HTTPS:
 ```bash
-sudo certbot --nginx -d ://yourdomain.com
+sudo certbot --nginx -d my.domen.com
 ```
 
 ### 4. Connect Prometheus
@@ -50,7 +50,7 @@ scrape_configs:
       username: 'monitor_user'
       password: 'your_secure_password_in_cleartext'
     static_configs:
-      - targets: ['://yourdomain.com:443']
+      - targets: ['my.domen.com:443']
 ```
 
 ---
