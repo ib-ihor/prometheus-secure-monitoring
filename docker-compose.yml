@@ -12,5 +12,5 @@ services:
       - '--path.sysfs=/host/sys'
       - '--path.rootfs=/rootfs'
     ports:
-      # Изолируем порт внутри localhost сервера
+      # We isolate the port within the localhost server
       - "127.0.0.1:9100:9100"
