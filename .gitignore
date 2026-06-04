@@ -1,9 +1,9 @@
-# Игнорируем секреты и пароли
+# Ignore secrets and passwords
 *.htpasswd
 *.env
 secret_*
 config/web.yml
 
-# Игнорируем логи и временные файлы
+# Ignore logs and temporary files
 *.log
 .DS_Store
